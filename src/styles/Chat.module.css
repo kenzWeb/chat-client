@@ -1,0 +1,113 @@
+/* Общие стили для .wrap */
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #222; /* Цвет фона */
+  padding: 20px; /* Увеличим отступы для контейнера .wrap */
+}
+
+/* Стили для .header */
+.header {
+  width: 100%;
+  background: #d1cccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px; /* Увеличим отступы для .header */
+  border-radius: 8px; /* Добавим скругление краев */
+}
+
+.title {
+  text-align: center;
+  font-size: 24px; /* Увеличим размер шрифта */
+  font-weight: 600; /* Увеличим жирность шрифта */
+  color: #fff;
+}
+
+.left {
+  background: rgb(253, 73, 73);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 8px 16px; /* Увеличим отступы для .left */
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Стили для .form */
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #444; /* Цвет фона .form */
+  justify-content: space-between;
+  padding: 10px 20px; /* Увеличим отступы для .form */
+  border-radius: 8px; /* Добавим скругление краев */
+  margin-top: 20px; /* Увеличим отступ сверху */
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  padding: 10px; /* Увеличим отступы для текстового поля */
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #555; /* Добавим рамку вокруг текстового поля */
+  border-radius: 4px; /* Скруглим углы рамки */
+}
+
+/* Стили для .button */
+.button {
+  text-align: center;
+}
+
+.button input {
+  cursor: pointer;
+  color: #fff;
+  background: #0d49d7;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px; /* Увеличим отступы для кнопки */
+  border-radius: 4px; /* Скруглим углы кнопки */
+  transition: background-color 0.3s ease; /* Добавим плавный переход цвета фона */
+}
+
+.button input:hover {
+  background: #0840a0; /* Изменение цвета фона при наведении */
+}
+
+/* Стили для .messages */
+.messages {
+  flex-grow: 1;
+  width: 100%;
+  background: #d1cccc; /* Цвет фона .messages */
+  padding: 20px; /* Увеличим отступы для .messages */
+  border-radius: 8px; /* Добавим скругление краев */
+  margin-top: 20px; /* Увеличим отступ сверху */
+  overflow-y: auto; /* Добавим вертикальную прокрутку при необходимости */
+}
+
+/* Стили для .emoji и .emojies */
+.emoji {
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.emoji img {
+  vertical-align: middle;
+}
+
+.emojies {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+}
