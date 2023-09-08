@@ -1,13 +1,15 @@
-import EmojiPicker from "emoji-picker-react"
-import React, { useEffect, useState } from "react"
-import { useLocation, useNavigate } from "react-router-dom"
-import io from "socket.io-client"
+import React from "react";
+import io from "socket.io-client";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import EmojiPicker from "emoji-picker-react";
 
-import icon from "../images/emoji.svg"
-import styles from "../styles/Chat.module.css"
-import Messages from "./Messages"
+import icon from "../images/emoji.svg";
+import styles from "../styles/Chat.module.css";
+import Messages from "./Messages";
 
-const socket = io.connect("https://socket-server-chat-n29y.onrender.com");
+const socket = io.connect("https://online-chat-900l.onrender.com");
 
 const Chat = () => {
   const { search } = useLocation();
