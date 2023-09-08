@@ -7,7 +7,7 @@ import icon from "../images/emoji.svg"
 import styles from "../styles/Chat.module.css"
 import Messages from "./Messages"
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://socket-server-chat-n29y.onrender.com");
 
 const Chat = () => {
   const { search } = useLocation();
